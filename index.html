@@ -1,0 +1,81 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Phone Book 2.0</title>
+        <meta name="description" content="A simple online phone book that will store all your favorite contacts." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="icon" href="favicon.ico" />
+
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header>
+            <div class="container">
+                <span class="site-title">Phone Book</span>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <h1 class="text-center">Add New Contact</h1>
+                <form id="add_contact_form" class="narrow-form" action="add_contact.php" method="post">
+                    <div class="input-group row">
+                        <label for="first_name" class="col-md-4">First Name</label>
+                        <div class="col-md-8">
+                            <input type="text" id="first_name" name="first_name" />
+                        </div>
+                    </div>
+                    <div class="input-group row">
+                        <label for="last_name" class="col-md-4">Last Name</label>
+                        <div class="col-md-8">
+                            <input type="text" id="last_name" name="last_name" />
+                        </div>
+                    </div>
+                    <div class="input-group row">
+                        <label for="phone" class="col-md-4">Primary Phone</label>
+                        <div class="col-md-8">
+                            <input type="tel" id="phone" name="phone" />
+                        </div>
+                    </div>
+                    <div class="form-buttons row">
+                        <div class="col-md-12">
+                            <input type="submit" value="Submit" class="btn btn-primary" />
+                            <input type="reset" value="Clear" class="btn" />
+                        </div>
+                    </div>
+                </form>
+
+                <table id="contacts-table" class="striped-table">
+                    <thead>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Action</th>
+                    </thead>
+                    <tbody>
+                        <!-- Insert contact rows here -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p class="text-center">Elizabeth Wyatt &copy; Company 2014</p>
+            </div>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
